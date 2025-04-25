@@ -515,15 +515,21 @@ img {
 }
 
 .cta-btn {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: #25D366; /* Verde WhatsApp */
+  color: white;
   font-weight: 700;
+}  
+  padding: 15px 30px;
+  border-radius: 8px; /* bordas arredondadas igual no print */
+  font-size: 18px;
+  transition: background-color 0.3s;
 }
 
 .cta-btn:hover {
-  background-color: var(--light-color);
-  color: var(--primary-color);
+  background-color: #1ebe5d; /* tom de verde mais escuro no hover */
+  color: white;
 }
+
 
 /* FAQ Section */
 .faq-container {
