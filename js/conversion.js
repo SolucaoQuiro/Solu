@@ -160,7 +160,7 @@ function addGuaranteeBadge() {
         guarantee.className = 'guarantee-badge';
         guarantee.innerHTML = `
             <i class="fas fa-shield-alt"></i>
-            <p><strong>Garantia de satisfação:</strong> Se não sentir melhora após a primeira sessão, a próxima é por nossa conta.</p>
+            <p><strong>Garantia de satisfação:</strong> Alivio já na primeira sessão.</p>
         `;
         
         ctaSection.appendChild(guarantee);
