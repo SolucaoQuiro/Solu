@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     conversionCss.href = 'css/conversion.css';
     document.head.appendChild(conversionCss);
     
-    // createOfferBar(); // REMOVIDO: barra de oferta no topo
-
+    // Criar barra de oferta no topo
+    createOfferBar();
+    
     // Criar popup de conversão
     createConversionPopup();
     
@@ -26,12 +27,61 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adicionar destaque para depoimentos
     addTestimonialHighlights();
     
-    // if (window.innerWidth <= 768) {
-    //     addMobileCta(); // REMOVIDO: botão de WhatsApp fixo no mobile
-    // }
+    // Adicionar botão de agendamento fixo no mobile
+    if (window.innerWidth <= 768) {
+        addMobileCta();
+    }
 });
 
-// REMOVIDAS as funções createOfferBar, startOfferTimer e addMobileCta
+// Função para criar barra de oferta no topo
+function createOfferBar() {
+    const offerBar = document.createElement('div');
+    offerBar.className = 'offer-bar';
+    
+    const currentDate = new Date();
+    const dayNames = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+    const dayName = dayNames[currentDate.getDay()];
+    
+    offerBar.innerHTML = `
+        <p>Promoção de ${dayName}: 20% de desconto na primeira sessão! <span class="offer-timer"><span class="timer-unit">23</span>:<span class="timer-unit">59</span>:<span class="timer-unit">59</span></span>
+        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20aproveitar%20a%20promoção%20de%20hoje%20para%20agendar%20uma%20consulta." class="btn-small">Aproveitar</a></p>
+    `;
+    
+    // Inserir antes do header
+    const header = document.querySelector('.header');
+    document.body.insertBefore(offerBar, header);
+    
+    // Iniciar temporizador
+    startOfferTimer();
+}
+
+// Função para iniciar temporizador da oferta
+function startOfferTimer() {
+    // Definir tempo para meia-noite
+    const now = new Date();
+    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+    let timeLeft = Math.floor((midnight - now) / 1000);
+    
+    const timerInterval = setInterval(function() {
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            timeLeft = 24 * 60 * 60; // Reiniciar para 24 horas
+        }
+        
+        const hours = Math.floor(timeLeft / 3600);
+        const minutes = Math.floor((timeLeft % 3600) / 60);
+        const seconds = timeLeft % 60;
+        
+        const timerUnits = document.querySelectorAll('.timer-unit');
+        if (timerUnits.length === 3) {
+            timerUnits[0].textContent = hours.toString().padStart(2, '0');
+            timerUnits[1].textContent = minutes.toString().padStart(2, '0');
+            timerUnits[2].textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        timeLeft--;
+    }, 1000);
+}
 
 // Função para criar popup de conversão
 function createConversionPopup() {
@@ -110,7 +160,7 @@ function addGuaranteeBadge() {
         guarantee.className = 'guarantee-badge';
         guarantee.innerHTML = `
             <i class="fas fa-shield-alt"></i>
-            <p><strong>Garantia de satisfação:</strong> Se não sentir melhora após a primeira sessão, a próxima é por nossa conta.</p>
+            <p><strong>Garantia de satisfação:</strong> Alivio já na primeira sessão.</p>
         `;
         
         ctaSection.appendChild(guarantee);
@@ -140,4 +190,17 @@ function addTestimonialHighlights() {
         
         testimonialSection.parentNode.insertBefore(highlight, testimonialSection.nextSibling);
     }
+}
+
+// Função para adicionar botão de agendamento fixo no mobile
+function addMobileCta() {
+    const mobileCta = document.createElement('div');
+    mobileCta.className = 'mobile-cta';
+    mobileCta.innerHTML = `
+        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Agendar Consulta</a>
+    `;
+    
+    // Inserir após o header
+    const header = document.querySelector('.header');
+    document.body.insertBefore(mobileCta, header.nextSibling);
 }
