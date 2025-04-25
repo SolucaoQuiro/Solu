@@ -200,7 +200,7 @@
 @media (max-width: 768px) {
   .mobile-cta {
     position: fixed;
-    top: 80px;
+    top: 120px;
     left: 0;
     width: 100%;
     background-color: white;
