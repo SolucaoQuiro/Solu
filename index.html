@@ -1,95 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br" itemscope itemtype="https://schema.org/Chiropractic">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>SoluçãoQuiro - Quiropraxia Especializada em Guarulhos | Tratamento para Dores na Coluna</title>
-    <meta name="description" content="Clínica de Quiropraxia no Centro de Guarulhos. Alívio Científico para Hérnia de Disco, Ciática e Dores Crônicas. Atendimento Urgente (11) 96595-2970">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoluçãoQuiro - Consultório de Quiropraxia em Guarulhos</title>
+    <meta name="description" content="Consultório de quiropraxia especializado no tratamento de dores na coluna, cervical, lombar e ciática. Agende sua consulta e sinta alívio já na primeira sessão.">
     
-    <!-- SEO -->
-    <link rel="canonical" href="https://solucaoquiro.github.io/Solu/">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Otimização Fontes -->
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     
-    <!-- CSS Otimizado -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.min.css">
-
-    <!-- CSS Inline Crítico -->
-    <style>
-        .header { position: fixed; top: 0; width: 100%; z-index: 1000; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .hero { padding-top: 120px; min-height: 100vh; position: relative; }
-        .btn-whatsapp { background: #25D366; color: #fff!important; animation: pulse 2s infinite; transition: all 0.3s; }
-        .btn-whatsapp:hover { transform: scale(1.05); }
-        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
-        .mobile-toggle { display: none; }
-        @media (max-width: 768px) {
-            .nav-menu { display: none; }
-            .mobile-toggle { display: block; }
-            .hero { padding-top: 100px; }
-        }
-    </style>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conversion.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
-
 <body>
-    <!-- Barra de Promoção -->
-    <div class="promo-banner" aria-label="Oferta especial">
-        <div class="container">
-            <div class="promo-content" itemscope itemtype="https://schema.org/Discount">
-                <h3>Promoção de Quinta: 20% OFF na 1ª Consulta!</h3>
-                <div class="promo-timer">
-                    <p>Termina em: <span id="countdown">23:59:59</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header Original com Melhorias de Acessibilidade -->
+    <!-- Header -->
     <header class="header">
         <div class="container header-container">
-            <div class="logo" itemscope itemtype="https://schema.org/MedicalOrganization">
+            <div class="logo">
                 <h1>SoluçãoQuiro</h1>
             </div>
-            <nav class="nav-menu" aria-label="Navegação principal">
-                <ul>
-                    <li><a href="#home" class="active">Início</a></li>
-                    <li><a href="#about">Quem Somos</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#benefits">Benefícios</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-toggle" aria-label="Abrir menu">
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#about">Quem Somos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="mobile-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section com Schema -->
-    <section id="home" class="hero" itemscope itemtype="https://schema.org/MedicalProcedure">
+    <body>
+  <!-- BARRA DE PROMOÇÃO -->
+  <section class="promo-banner">
+    <div class="container">
+      <div class="promo-content">
+        <h3>Promoção de Quinta: 20% de desconto na primeira consulta!</h3>
+        <div class="promo-timer">
+          <p>Oferta válida por: <span id="countdown">23:59:59</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <!-- seu conteúdo do header aqui -->
+  </header> 
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1 itemprop="name">Alívio Imediato para Dores na Coluna</h1>
-            <p itemprop="description">Atendimento de Emergência - 97% dos pacientes sentem alívio na 1ª sessão</p>
+            <h1>Alívio para suas dores na coluna</h1>
+            <p>Travado? Dor nas costas? Agende sua sessão de quiropraxia especializada e sinta alívio já na primeira sessão.</p>
             <div class="hero-btns">
-                <a href="https://wa.me/5511965952970" class="btn btn-whatsapp" aria-label="Agendar pelo WhatsApp">
-                    <i class="fab fa-whatsapp"></i> Atendimento Urgente
-                </a>
-                <a href="tel:11965952970" class="btn btn-call" aria-label="Ligar agora">
-                    <i class="fas fa-phone-alt"></i> Ligar Agora
-                </a>
+                <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Agendar Consulta</a>
+                <a href="#services" class="btn">Conheça nossos serviços</a>
             </div>
         </div>
-        <a href="#about" class="scroll-down" aria-label="Role para baixo">
+        <a href="#about" class="scroll-down">
             <i class="fas fa-chevron-down"></i>
         </a>
     </section>
+
 
     <!-- Sobre Nós -->
     <section id="about" class="section about">
@@ -458,68 +440,83 @@
     </section>
 
     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <h2>SoluçãoQuiro</h2>
+                    </div>
+                    <p>Consultório de quiropraxia especializado no tratamento de dores na coluna, cervical, lombar e ciática. Agende sua consulta e sinta alívio já na primeira sessão.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Quem Somos</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            Rua Benedito Faustino de Morais, 136, Vila Rachid, Guarulhos, SP
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            (11) 96595-2970
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            contato@solucaoquiro.com.br
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SoluçãoQuiro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Scripts Corrigidos -->
-    <script>
-        // Timer Funcional
-        function startTimer(duration) {
-            let timer = duration, hours, minutes, seconds;
-            const countdownElement = document.getElementById('countdown');
-            
-            setInterval(() => {
-                hours = parseInt(timer / 3600, 10);
-                minutes = parseInt((timer % 3600) / 60, 10);
-                seconds = parseInt(timer % 60, 10);
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
-                countdownElement.textContent = 
-                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    <!-- Conversion Popup -->
+    <div class="conversion-popup" id="conversionPopup">
+        <div class="popup-header">
+            <h3>Agende sua consulta</h3>
+            <button class="popup-close" id="popupClose">&times;</button>
+        </div>
+        <div class="popup-content">
+            <p>Está sentindo dores? Não espere mais para buscar alívio. Agende sua consulta agora e dê o primeiro passo para uma vida sem dores.</p>
+            <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." class="popup-cta">
+                <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+            </a>
+        </div>
+    </div>
 
-                if (--timer < 0) timer = duration;
-            }, 1000);
-        }
-        window.onload = () => startTimer(86399);
-
-        // Menu Mobile
-        document.querySelector('.mobile-toggle').addEventListener('click', () => {
-            const navMenu = document.querySelector('.nav-menu');
-            navMenu.classList.toggle('active');
-            navMenu.style.display = navMenu.classList.contains('active') ? 'block' : 'none';
-        });
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-
-    <!-- Schema Completo -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Chiropractic",
-        "name": "SoluçãoQuiro",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Rua Benedito Faustino de Morais, 136",
-            "addressLocality": "Guarulhos",
-            "addressRegion": "SP",
-            "postalCode": "07020-070"
-        },
-        "telephone": "+5511965952970",
-        "openingHours": "Mo-Fr 09:00-19:00, Sa 09:00-14:00",
-        "image": "URL_DA_IMAGEM",
-        "priceRange": "R$120 - R$300",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "27"
-        }
-    }
-    </script>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/conversion.js"></script>
 </body>
 </html>
