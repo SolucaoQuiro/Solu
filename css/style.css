@@ -493,10 +493,11 @@ img {
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background-color: #2b2b2b; /* fundo preto/cinza escuro */
   color: white;
   text-align: center;
   padding: 60px 0;
+
 }
 
 .cta h2 {
