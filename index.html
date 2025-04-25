@@ -1,223 +1,522 @@
 <!DOCTYPE html>
-<html lang="pt-br" itemscope itemtype="https://schema.org/Chiropractic">
+<html lang="pt-br">
 <head>
-    <!-- 🚀 Meta Tags Otimizadas -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://solucaoquiro.github.io/Solu/">
-
-    <!-- 🎯 Título com Prioridade de Palavras-Chave -->
-    <title>Quiropraxia em Guarulhos | SoluçãoQuiro: Especialista em Hérnia de Disco e Dores na Coluna</title>
-
-    <!-- 🛠️ Meta Descrição Otimizada -->
-    <meta name="description" content="Clínica especializada em Quiropraxia no Centro de Guarulhos. Tratamento científico para Hérnia de Disco, Ciática e Dores Crônicas. Atendimento Urgente (11) 96595-2970">
-
-    <!-- 🎯 Open Graph Ampliado -->
-    <meta property="og:title" content="SoluçãoQuiro - Quiropraxia Científica em Guarulhos">
-    <meta property="og:description" content="Alívio imediato para hérnia de disco e dores na coluna com 15 anos de experiência. Agende sua consulta urgente!">
-    <meta property="og:image" content="https://solucaoquiro.com.br/images/og-image.jpg">
-    <meta property="og:url" content="https://solucaoquiro.github.io/Solu/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt_BR">
-
-    <!-- 🚀 Pré-carregamento Otimizado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoluçãoQuiro - Consultório de Quiropraxia em Guarulhos</title>
+    <meta name="description" content="Consultório de quiropraxia especializado no tratamento de dores na coluna, cervical, lombar e ciática. Agende sua consulta e sinta alívio já na primeira sessão.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="css/styles.min.css" as="style">
-    <link rel="preload" href="js/main.min.js" as="script">
-
-    <!-- 🚀 Fontes com FOUT Controlado -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-
-    <!-- 🎯 CSS Inline Crítico -->
-    <style>
-        /* CSS crítico otimizado removido para brevidade */
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conversion.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
-
-<body class="font-loading">
-    <!-- 🎯 Barra de Conversão com Microdados -->
-    <aside class="promo-banner" role="complementary" itemscope itemtype="https://schema.org/Promotion">
-        <div class="container">
-            <div class="promo-content">
-                <h3 itemprop="name">Promoção Relâmpago: <span itemprop="price">R$ 120</span> (1ª Consulta)</h3>
-                <div class="promo-timer" role="timer" aria-live="polite">
-                    <p>Termina em: <time datetime="PT23H59M59S">23:59:59</time></p>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- 🛠️ Header Semântico Aprimorado -->
-    <header class="header" role="banner" itemscope itemtype="https://schema.org/MedicalOrganization">
+<body>
+    <!-- Header -->
+    <header class="header">
         <div class="container header-container">
-            <a href="/" class="logo" aria-label="SoluçãoQuiro - Página inicial">
-                <h1 itemprop="name">SoluçãoQuiro <span>Quiropraxia Especializada</span></h1>
-            </a>
-            
-            <!-- 🚀 Navegação Acessível -->
-            <nav class="nav-menu" role="navigation" aria-label="Menu principal">
-                <ul role="menubar">
-                    <li role="none"><a href="#home" role="menuitem" aria-current="page">Início</a></li>
-                    <li role="none"><a href="#results" role="menuitem">Resultados</a></li>
-                    <li role="none"><a href="#testimonials" role="menuitem">Depoimentos</a></li>
-                    <li role="none"><a href="#contact" role="menuitem">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <h1>SoluçãoQuiro</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#about">Quem Somos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
-    <!-- 🎯 Hero Section com Microdados -->
-    <section id="home" class="hero" role="region" aria-label="Apresentação">
-        <div class="hero-content" itemscope itemtype="https://schema.org/MedicalProcedure">
-            <h1 itemprop="name">Alívio Imediato para Dores na Coluna</h1>
-            <p class="subtitle">97% de eficácia comprovada em primeira sessão</p>
-            
-            <!-- 🎯 CTAs Otimizados -->
-            <div class="hero-btns" role="group" aria-label="Ações principais">
-                <a href="https://wa.me/5511965952970" 
-                   class="btn btn-whatsapp pulse"
-                   aria-label="Agendar consulta via WhatsApp"
-                   rel="noopener noreferrer"
-                   data-conversion="cta_hero">
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Emergência
-                </a>
-                <a href="tel:11965952970" 
-                   class="btn btn-phone"
-                   aria-label="Ligar para clínica"
-                   data-conversion="cta_phone">
-                    <i class="fas fa-phone-alt" aria-hidden="true"></i> Ligar Agora
-                </a>
+    <body>
+  <!-- BARRA DE PROMOÇÃO -->
+  <section class="promo-banner">
+    <div class="container">
+      <div class="promo-content">
+        <h3>Promoção de Quinta: 20% de desconto na primeira consulta!</h3>
+        <div class="promo-timer">
+          <p>Oferta válida por: <span id="countdown">23:59:59</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <!-- seu conteúdo do header aqui -->
+  </header> 
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Alívio para suas dores na coluna</h1>
+            <p>Travado? Dor nas costas? Agende sua sessão de quiropraxia especializada e sinta alívio já na primeira sessão.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Agendar Consulta</a>
+                <a href="#services" class="btn">Conheça nossos serviços</a>
             </div>
         </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
-    <!-- 🛠️ Seção Sobre com Schema Médico -->
-    <section id="about" class="section about" itemscope itemtype="https://schema.org/MedicalBusiness">
+
+    <!-- Sobre Nós -->
+    <section id="about" class="section about">
         <div class="container">
             <div class="section-title">
-                <h2 itemprop="founder">Dr. Ygor de Souza</h2>
-                <p>15 anos transformando vidas em Guarulhos</p>
+                <h2>Quem Somos Nós</h2>
+                <p>Conheça nossa história e compromisso com seu bem-estar</p>
             </div>
             <div class="about-container">
                 <div class="about-img">
-                    <img src="images/1000322417.jpg" 
-                         alt="Dr. Ygor realizando ajuste quiroprático" 
-                         loading="lazy"
-                         itemprop="image">
+                    <img src="images/1000322417.jpg" alt="Quiropraxista realizando atendimento">
                 </div>
                 <div class="about-content">
-                    <h3>Expertise Científica</h3>
-                    <div itemprop="description">
-                        <ul class="expertise-list">
-                            <li>✅ Protocolos Internacionais</li>
-                            <li>✅ Equipamentos de Alta Tecnologia</li>
-                            <li>✅ +5.000 Casos Resolvidos</li>
-                        </ul>
+                    <h3>Nossa História</h3>
+                    <p>A SoluçãoQuiro carrega a história de dedicação e cuidado com a saúde desde 2008, quando foi fundada por Bráulio Silvio, conhecido por sua abordagem humanizada e eficaz no tratamento de dores na coluna e articulações.</p>
+                    <p>Inicialmente chamada de Solução da Dor, a clínica se tornou referência em Guarulhos ao ajudar centenas de pessoas a recuperarem sua qualidade de vida.</p>
+                    <p>Em 2023, o legado foi passado para uma nova geração, quando Ygor de Souza, filho de Bráulio, assumiu o compromisso de modernizar e expandir os serviços. Assim nasceu a SoluçãoQuiro, unindo tradição familiar e as mais modernas técnicas da quiropraxia.</p>
+                    <p>Nosso objetivo é simples: <strong>ajudar você a viver sem dores e com mais bem-estar</strong>. Estamos localizados no centro de Guarulhos e prontos para cuidar de você com excelência.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Experiência Familiar</h4>
+                                <p>Tradição de cuidado desde 2007, com conhecimento passado de pai para filho.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Formação Especializada</h4>
+                                <p>Cursos livres de quiropraxia e afiliação à ANQ para garantir qualidade no atendimento.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🎯 Seção de Serviços com Microconversões -->
+    <!-- Serviços -->
     <section id="services" class="section services">
         <div class="container">
             <div class="section-title">
-                <h2>Tratamentos Especializados</h2>
-                <p>Soluções comprovadas para cada tipo de dor</p>
+                <h2>Nossos Serviços</h2>
+                <p>Tratamentos especializados para aliviar suas dores</p>
             </div>
             <div class="services-container">
-                <!-- Serviço 1 -->
-                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                <div class="service-card">
                     <div class="service-img">
-                        <img src="images/1000322417.jpg" 
-                             alt="Tratamento de Hérnia de Disco" 
-                             loading="lazy"
-                             itemprop="image">
+                        <img src="images/1000322417.jpg" alt="Tratamento de Quiropraxia">
                     </div>
                     <div class="service-content">
-                        <h3 itemprop="name">Hérnia de Disco</h3>
-                        <p itemprop="description">Protocolo científico para redução de dor e inflamação</p>
-                        <div class="service-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <span itemprop="price">R$ 120</span>
-                            <meta itemprop="priceCurrency" content="BRL">
-                        </div>
-                        <a href="https://wa.me/5511965952970" 
-                           class="btn btn-whatsapp"
-                           data-conversion="cta_service">
-                            <i class="fab fa-whatsapp"></i> Agendar
-                        </a>
+                        <h3>Quiropraxia para Coluna</h3>
+                        <p>Tratamento especializado para dores na coluna vertebral, incluindo região cervical, torácica e lombar. Ajustes precisos para corrigir desalinhamentos e aliviar dores.</p>
+                        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20tratamento%20de%20coluna." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Agendar</a>
                     </div>
                 </div>
-                <!-- Demais serviços com estrutura similar -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/1000322449.jpg" alt="Tratamento para Dor Ciática">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tratamento para Ciática</h3>
+                        <p>Alívio para dores ciáticas que irradiam da lombar para as pernas. Técnicas específicas para reduzir a pressão sobre o nervo ciático e promover alívio duradouro.</p>
+                        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20tratamento%20de%20ciática." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Agendar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/1000322450.jpg" alt="Alívio para Cervical">
+                    </div>
+                    <div class="service-content">
+                        <h3>Alívio para Cervical</h3>
+                        <p>Tratamento para dores, tensões e travamentos na região do pescoço e ombros. Ideal para quem passa muito tempo em frente ao computador ou sofre com má postura.</p>
+                        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20para%20tratamento%20de%20cervical." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Agendar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 🛠️ Schema Médico Completo -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Chiropractic",
-        "name": "SoluçãoQuiro",
-        "medicalSpecialty": "Chiropractic",
-        "priceRange": "R$120 - R$300",
-        "image": "URL_DA_IMAGEM",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Rua Benedito Faustino de Morais, 136",
-            "addressLocality": "Guarulhos",
-            "addressRegion": "SP",
-            "postalCode": "07020-070"
-        },
-        "telephone": "+5511965952970",
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "09:00",
-                "closes": "19:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "14:00"
-            }
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "87"
-        }
-    }
-    </script>
+    <!-- Benefícios -->
+    <section id="benefits" class="section benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefícios da Quiropraxia</h2>
+                <p>Cuidar da coluna é cuidar de você</p>
+            </div>
+            <p class="text-center">A quiropraxia vai muito além do alívio da dor, ela é uma aliada tanto no tratamento quanto na prevenção de problemas causados por desalinhamentos da coluna. Os benefícios vão muito além do que você imagina.</p>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-spine"></i>
+                    </div>
+                    <h3>Alívio para dores</h3>
+                    <p>Alívio para dores nas costas, pescoço, travamentos e ciática, proporcionando mais conforto no dia a dia.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Aumento na energia</h3>
+                    <p>Mais disposição para suas atividades diárias, com redução da fadiga e sensação de cansaço constante.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Melhora no sono</h3>
+                    <p>Qualidade de sono aprimorada, permitindo um descanso mais profundo e reparador durante a noite.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Baseado em ciência</h3>
+                    <p>Quiropraxia baseada em ciência e experiência prática, com técnicas comprovadas e seguras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- 🚀 Scripts Otimizados -->
-    <script defer src="js/main.min.js"></script>
-    <script>
-        // Carregamento Progressivo
-        document.fonts.ready.then(() => {
-            document.body.classList.remove('font-loading');
-        });
-        
-        // Timer Real
-        function updateTimer() {
-            const timer = document.getElementById('countdown');
-            let time = 86399; // 23:59:59 em segundos
-            
-            setInterval(() => {
-                const hours = Math.floor(time / 3600);
-                const minutes = Math.floor((time % 3600) / 60);
-                const seconds = time % 60;
-                
-                timer.innerHTML = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-                
-                if(time > 0) time--;
-            }, 1000);
-        }
-        updateTimer();
-    </script>
+    <!-- Galeria de Fotos -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nosso Consultório</h2>
+                <p>Conheça nosso espaço e veja como trabalhamos</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/1000314184.jpg" alt="Consultório SoluçãoQuiro">
+                    <div class="gallery-overlay">
+                        <h3>Ambiente Acolhedor</h3>
+                        <p>Espaço preparado para seu conforto e bem-estar durante o tratamento</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/1000322398.jpg" alt="Consultório SoluçãoQuiro">
+                    <div class="gallery-overlay">
+                        <h3>Estrutura Completa</h3>
+                        <p>Equipamentos e ambiente preparados para seu tratamento</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/1000322397.jpg" alt="Consultório SoluçãoQuiro">
+                    <div class="gallery-overlay">
+                        <h3>Espaço Profissional</h3>
+                        <p>Ambiente tranquilo e preparado para seu atendimento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto para sentir o alívio das dores?</h2>
+            <p>Está com dor agora? Não adie sua melhora. Agende sua consulta facilmente pelo WhatsApp e escolha o melhor horário para você!</p>
+            <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." class="btn cta-btn">Agendar Agora <i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Veja o que os pacientes estão dizendo</h2>
+                <p>Histórias reais de quem já experimentou nossos tratamentos</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Top demais! Atendimento excelente profissional.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-info">
+                            <h4>Flávio Arthur Cândido</h4>
+                            <p>há 1 mês</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>A minha experiência foi maravilhosa eu tenho 4 hérnias de disco na coluna e artrose, eu estava com muita dor e depois da sessão melhorei muito, recomendo.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-info">
+                            <h4>Natalia Correa</h4>
+                            <p>há 2 meses</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Sair satisfeita com tratamento. Quiropraxista fiz na coluna, recomendo.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-info">
+                            <h4>Alessandra Costa Pereira</h4>
+                            <p>há 2 meses</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Ótimo atendimento, já não sinto mais minhas costas doer quando me deito na cama!! Eu e minha esposa adoramos o atendimento.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-info">
+                            <h4>Nikolas</h4>
+                            <p>há 2 meses</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre a quiropraxia</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        O que é quiropraxia?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A quiropraxia é uma profissão da área da saúde que se concentra no diagnóstico, tratamento e prevenção de distúrbios do sistema neuromusculoesquelético e os efeitos desses distúrbios na saúde geral. Utiliza técnicas manuais, incluindo ajustes articulares e manipulações, com foco especial na coluna vertebral.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        A quiropraxia dói?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Geralmente, os ajustes quiropraxicos não causam dor. Muitos pacientes relatam uma sensação de alívio imediato após o tratamento. Alguns podem sentir um leve desconforto durante o ajuste, semelhante ao que se sente ao alongar um músculo, mas isso é momentâneo. Após o tratamento, alguns pacientes podem experimentar uma leve sensibilidade na área tratada, mas isso geralmente desaparece em 24 horas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quantas sessões são necessárias?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O número de sessões varia de acordo com a condição do paciente, a gravidade do problema e a resposta individual ao tratamento. Alguns pacientes sentem alívio significativo após apenas uma sessão, enquanto outros podem precisar de um plano de tratamento mais longo. Após a avaliação inicial, o quiropraxista poderá recomendar um plano de tratamento personalizado.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        A quiropraxia é segura?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, a quiropraxia é considerada segura quando realizada por profissionais qualificados. É um tratamento não invasivo e sem medicamentos, o que reduz os riscos de efeitos colaterais. Como qualquer intervenção de saúde, existem alguns riscos, mas são raros e geralmente menores quando comparados a tratamentos mais invasivos ou medicamentosos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Preciso de encaminhamento médico?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não, você não precisa de encaminhamento médico para consultar um quiropraxista. Os quiropraxistas são profissionais de saúde de primeiro contato, o que significa que você pode agendar uma consulta diretamente. No entanto, se você estiver sob cuidados médicos para uma condição específica, é sempre bom informar seu médico sobre todos os tratamentos que está recebendo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para cuidar de você</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Endereço</h4>
+                            <p>Rua Benedito Faustino de Morais, Vila Rachid, 136, Guarulhos, SP.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefone</h4>
+                            <p>(11) 96595-2970</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 9h às 19h<br>Sábado: 9h às 14h</p>
+                        </div>
+                    </div>
+                    <div class="availability-indicator">
+                        <div class="availability-status"></div>
+                        <div class="availability-text">Atendimento disponível hoje</div>
+                    </div>
+                    <div class="session-counter">
+                        <h4>Sessões Disponíveis Hoje</h4>
+                        <p>Restam poucas vagas para hoje</p>
+                        <div class="session-count">3</div>
+                        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Garantir Minha Vaga</a>
+                    </div>
+                    <div class="guarantee-seal">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Garantia de Satisfação</h4>
+                        <p>Se você não sentir melhora após a primeira sessão, não paga pela consulta.</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.5851464731283!2d-46.53233692469576!3d-23.43981205903633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef55ff17a3c91%3A0x821c3e8c08f6db0c!2sR.%20Benedito%20Faustino%20de%20Morais%2C%20136%20-%20Vila%20Rachid%2C%20Guarulhos%20-%20SP%2C%2007020-070!5e0!3m2!1spt-BR!2sbr!4v1682530269428!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <h2>SoluçãoQuiro</h2>
+                    </div>
+                    <p>Consultório de quiropraxia especializado no tratamento de dores na coluna, cervical, lombar e ciática. Agende sua consulta e sinta alívio já na primeira sessão.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Quem Somos</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            Rua Benedito Faustino de Morais, 136, Vila Rachid, Guarulhos, SP
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            (11) 96595-2970
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            contato@solucaoquiro.com.br
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SoluçãoQuiro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Conversion Popup -->
+    <div class="conversion-popup" id="conversionPopup">
+        <div class="popup-header">
+            <h3>Agende sua consulta</h3>
+            <button class="popup-close" id="popupClose">&times;</button>
+        </div>
+        <div class="popup-content">
+            <p>Está sentindo dores? Não espere mais para buscar alívio. Agende sua consulta agora e dê o primeiro passo para uma vida sem dores.</p>
+            <a href="https://wa.me/5511965952970?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20quiropraxia." class="popup-cta">
+                <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/conversion.js"></script>
 </body>
 </html>
