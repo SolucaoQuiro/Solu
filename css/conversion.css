@@ -134,6 +134,9 @@
     background-color: var(--primary-color);
   }
 }
+.offer-bar {
+  display: none !important;
+}
 
 /* Destaque para promoções */
 .promo-badge {
