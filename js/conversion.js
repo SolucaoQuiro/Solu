@@ -204,3 +204,6 @@ function addMobileCta() {
     const header = document.querySelector('.header');
     document.body.insertBefore(mobileCta, header.nextSibling);
 }
+.offer-bar {
+  display: none !important;
+}
