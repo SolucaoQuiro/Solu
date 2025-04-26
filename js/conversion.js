@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(conversionCss);
     
     // Criar barra de oferta no topo
-    createOfferBar();
+    // createOfferBar();
+
     
     // Criar popup de conversão
     createConversionPopup();
