@@ -356,12 +356,3 @@
 .share-button i {
   font-size: 1rem;
 }
-.offer-bar {
-  display: none !important;
-}
-
-@media (max-width: 768px) {
-  .offer-bar {
-    display: none !important;
-  }
-}
